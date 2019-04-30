@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.message-output-area
+,.message-input-area
+,.message-send-area{
+	padding: 0px;
+	width:100%;
+	border: 1px solid black;
+}
+/*送受信メッセージを表示する領域*/
+.message-output-area{
+	padding: 0.5rem;
+	height: 65vh;
+	overflow-y: scroll;
+}
+/* テキストエリアのスタイル */
+.message-input{
+	resize: none;
+	width: 100%;
+}
+/*メッセージを記載する領域*/
+.message-input-area{
+	border-top-style: none;
+	border-bottom-style: none;
+	
+}
+/*メッセージを送信する領域*/
+.message-send-area{
+	border-top-style: none;
+	vertical-align: middle;
+	text-align: right;
+}
+
+/* 送信ボタンのスタイル */
+#sendMessage{
+	margin: 5px;
+}
+/* 受信するメッセージの風船のスタイル 開始*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.balloon6 .chatting {
+  width: 100%;
+  text-align: left;
+}
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px; 
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.says p {
+  word-break: break-all;
+  margin: 0;
+  padding: 0;
+}
+.mycomment {
+	text-align: right;
+	margin: 10px 0;
+}
+/* 受信するメッセージの風船のスタイル 終了*/
+
+/* 送信するメッセージの風船のスタイル 開始*/
+.mycomment p {
+  display: inline-block;
+  position: relative; 
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 15px;
+  word-break: break-all;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px; 
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+/* 送信するメッセージの風船のスタイル 終了*/
+.footer{
+	position: relative;
+	bottom: 0px;
+}

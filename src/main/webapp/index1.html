@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Nepali</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="common/uicomponent/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="common/uicomponent/jquery.min.js"></script>
+	<script src="common/uicomponent/popper.min.js"></script>
+	<script src="common/uicomponent/bootstrap.min.js"></script>
+	<script src="script1.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+ <header>
+ 	<nav class="navbar navbar-light bg-light container-fluid" id="" onclick="">
+    	<a class="navbar-brand">Navbar</a>
+    	<div class="navbar-brand">
+    		<label>User Id</label>
+    		<input type="text" id="txt-connect-user"/>
+    		<input type="button" id="btn-connect-user" value="Connect" onclick="connectMe();"/>
+    		<label>Send TO</label>
+    		<input type="text" id="txt-send-user"/>
+    	</div>
+    </nav>
+</header>
+  <div class="container-fluid d-flex flex-wrap">
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col message-output-area" id="outputarea">
+					
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col message-input-area">
+	    			<textarea id="txtarea-messages" class="message-input" rows="5" cols="20" maxlength="150" ></textarea>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    		<div class="col message-send-area">
+	    			<span id='remainingC'>150</span>
+	    			<input class="btn btn-primary" type="button" value="Send" id="sendMessage" onclick="onSendMessage();"/>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+<footer class="footer container-fluid">
+	<nav class="navbar navbar-light bg-light" id="" onclick="">
+		<span class="navbar-brand"><a target="_blank" href="mailto:gurungb323@gmail.com">प्रतिक्रिया पठाउनुहोस्</a></span>
+		<span class="navbar-brand">&copy;redpanda.tokyo All Rights Reserved</span>
+	</nav>
+</footer>
+  </body>
+</html>
